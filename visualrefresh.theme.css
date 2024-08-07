@@ -57,8 +57,7 @@ button[aria-label~="sticker"] {
 
 /* Base */
 .base_a4d4d9 {
-    overflow: null;
-
+    overflow: visible;
 }
 #app-mount > div.appAsidePanelWrapper_bd26cc > div.notAppAsidePanel_bd26cc > div.app_bd26cc > div > div.layers_d4b6c5.layers_a01fb1 > div > div > div > div > div.chat_a7d72e.threadSidebarOpen_a7d72e {
     max-width: 883px;
