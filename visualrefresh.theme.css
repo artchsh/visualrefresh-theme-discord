@@ -1,0 +1,141 @@
+/**
+ * @name VisualRefresh
+ * @author artchsh
+ * @version 1.0.0
+ * @description Recreated new visual from discord previews 
+ * @invite SQp3zWB5yR
+ * @authorId 530715643608170514
+ * @source https://github.com/artchsh/visualrefresh-theme-discord/
+ * @BDEditor VisualRefresh
+*/
+
+@import "https://raw.githubusercontent.com/DiscordStyles/RadialStatus/deploy/RadialStatus.theme.css";
+
+:root {
+    --st-gray: var(--bg-overlay-chat, var(--custom-channel-members-bg));
+    --st-gray-black: #1e1f22;
+    --sr-gray-light: #313338;
+    --ch-def: color-mix(
+    in oklab,
+    var(--primary-360) 50%,
+    var(--theme-text-color, black) var(--theme-text-color-amount, 0%)
+  );
+    --radius-xs: 8px;
+}
+
+/* Hide buttons that are on input message field */
+button[aria-label~="gift"] {
+    display: none;
+}
+
+button[aria-label~="GIF"] {
+    display: none;
+}
+
+button[aria-label~="sticker"] {
+    display: none;
+}
+
+.stickerIconOffset_ccd3df {
+    display: none;
+}
+
+#app-mount > div.appAsidePanelWrapper_bd26cc > div.notAppAsidePanel_bd26cc > div.app_bd26cc > div > div.layers_d4b6c5.layers_a01fb1 > div > div > nav > ul > div.scroller_fea3ef.none_c49869.scrollerBase_c49869 > div:nth-child(5) {
+    display: none;
+}
+
+/* #app-mount>div.appAsidePanelWrapper_bd26cc>div.notAppAsidePanel_bd26cc>div.app_bd26cc>div>div.layers_d4b6c5.layers_a01fb1>div>div>div>div>div.chat_a7d72e>div.content_a7d72e>main>form>div>div.channelTextArea_a7d72e.channelTextArea_d0696b>div.scrollableContainer_d0696b.themedBackground_d0696b {
+    background-color: var(--sr-gray-light);
+    border-radius: 0;
+    border-top: 1px solid var(--ch-def);
+} */
+
+#app-mount > div.appAsidePanelWrapper_bd26cc > div.notAppAsidePanel_bd26cc > div.app_bd26cc > div > div.layers_d4b6c5.layers_a01fb1 > div > div > div > div > div.chat_a7d72e > div.content_a7d72e > main > form {
+    border-top-width: 2px;
+    border-color: rgb(255 255 255);
+}
+
+/* Base */
+.base_a4d4d9 {
+    overflow: null;
+
+}
+#app-mount > div.appAsidePanelWrapper_bd26cc > div.notAppAsidePanel_bd26cc > div.app_bd26cc > div > div.layers_d4b6c5.layers_a01fb1 > div > div > div > div > div.chat_a7d72e.threadSidebarOpen_a7d72e {
+    max-width: 883px;
+}
+
+/* Server Header */
+.header_fd6364 {
+    background-color: var(--st-gray-black);
+    box-shadow: none;
+}
+#app-mount > div.appAsidePanelWrapper_bd26cc > div.notAppAsidePanel_bd26cc > div.app_bd26cc > div > div.layers_d4b6c5.layers_a01fb1 > div > div > div > div > div.sidebar_a4d4d9 > nav > div.container_fd6364.clickable_fd6364.hasBanner_fd6364.bannerVisible_fd6364.theme-dark.images-dark > div > div {
+    width: 300px;
+    height: 188px;
+}
+
+#app-mount > div.appAsidePanelWrapper_bd26cc > div.notAppAsidePanel_bd26cc > div.app_bd26cc > div > div.layers_d4b6c5.layers_a01fb1 > div > div > div > div > div.sidebar_a4d4d9 > nav > div.container_fd6364.clickable_fd6364.hasBanner_fd6364.bannerVisible_fd6364.theme-dark.images-dark > div > div > img {
+    width: 300px;
+    height: 188px;
+}
+
+/* Channels */
+#app-mount>div.appAsidePanelWrapper_bd26cc>div.notAppAsidePanel_bd26cc>div.app_bd26cc>div>div.layers_d4b6c5.layers_a01fb1>div>div>div>div>div.sidebar_a4d4d9 {
+    width: 300px;
+} /* channels wrapper div */
+
+/* Fixes non clickable channels */
+#channels {
+    background-color: var(--st-gray-black) !important;
+    margin-bottom: 4rem;
+}
+#app-mount > div.appAsidePanelWrapper_bd26cc > div.notAppAsidePanel_bd26cc > div.app_bd26cc > div > div.layers_d4b6c5.layers_a01fb1 > div > div > div > div > div.sidebar_a4d4d9 > nav {
+    background-color: var(--st-gray-black) !important;
+}
+
+/* Fixes banner getting colored ??? */
+div.animatedBannerHoverLayer_fd6364 {
+    position: static;
+}
+#channels > ul > div:nth-child(1) {
+    display: none;
+}
+
+/* Profile Container */
+div.sidebar_a4d4d9>section {
+    border-radius: 1rem;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: .4rem;
+    margin-left: -4.1rem;
+    width: calc(72px + 300px - 2.1rem);
+
+}
+
+div.container_b2ca13 {
+    background-color: var(--sr-gray-light) !important;
+    border-radius: .5rem;
+    padding: .2rem;
+    padding-left: .7rem;
+    padding-right: .7rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Create new server button */
+#app-mount > div.appAsidePanelWrapper_bd26cc > div.notAppAsidePanel_bd26cc > div.app_bd26cc > div > div.layers_d4b6c5.layers_a01fb1 > div > div > nav > ul > div.scroller_fea3ef.none_c49869.scrollerBase_c49869 > div.tutorialContainer_c96c45 > div.listItem_c96c45 > div > div > svg > foreignObject > div {
+    background: none;
+    color: var(--channels-default);
+}
+
+#app-mount > div.appAsidePanelWrapper_bd26cc > div.notAppAsidePanel_bd26cc > div.app_bd26cc > div > div.layers_d4b6c5.layers_a01fb1 > div > div > nav > ul > div.scroller_fea3ef.none_c49869.scrollerBase_c49869 > div.tutorialContainer_c96c45 > div.listItem_c96c45 > div > div > svg > foreignObject > .selected_db6521 {
+    color: var(--green-300);
+}
+
+/* */
+#app-mount > div.appAsidePanelWrapper_bd26cc > div.notAppAsidePanel_bd26cc > div.app_bd26cc > div > div.layers_d4b6c5.layers_a01fb1 > div > div > div > div > div.sidebar_a4d4d9 > nav > div.container_eba0ba.bottom_eba0ba {
+    display: none;
+}
+
