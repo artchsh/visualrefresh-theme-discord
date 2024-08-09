@@ -11,7 +11,7 @@ New VisualRefresh theme for discord
 2. Click on the settings icon next to your username at the bottom left of the Discord window.
 3. Scroll down in the left-hand sidebar and click on "Themes" under the BetterDiscord section.
 4. In the Themes page, click on the "Open Theme Folder" button. This will open the folder where your themes are stored.
-5. Move `visualrefresh.theme.css` ([download](https://github.com/artchsh/visualrefresh-theme-discord/releases/download/v1.1.2/visualrefresh.theme.css)) file into this folder.
+5. Move `visualrefresh.theme.css` ([link](https://github.com/artchsh/visualrefresh-theme-discord/releases/latest)) file into this folder.
 6. Go back to Discord and toggle on the theme you just added. The theme should now be applied.
 ---
 
@@ -22,7 +22,7 @@ New VisualRefresh theme for discord
   2. Click on the settings icon at the bottom left of the Discord window.
   3. Scroll down to the Vencord section and select "Themes."
   4. Click on the "Open Themes Folder" button.
-  5. Move `visualrefresh.theme.css` ([download](https://github.com/artchsh/visualrefresh-theme-discord/releases/download/v1.1.2/visualrefresh.theme.css)) file into this folder.
+  5. Move `visualrefresh.theme.css` ([link](https://github.com/artchsh/visualrefresh-theme-discord/releases/latest)) file into this folder.
   6. Go back to Discord and enable the theme from the Themes menu.
 
 - **Using a Direct Link:**
