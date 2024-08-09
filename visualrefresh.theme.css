@@ -1,12 +1,11 @@
 /**
  * @name VisualRefresh
  * @author chuteduciel
- * @version 1.1.2
+ * @version 1.2.0
  * @description Recreated new visual from previews (that is upcoming in feature official updates)
  * @invite ZHthyCw
  * @authorId 530715643608170514
  * @source https://github.com/DiscordStyles/SoftX
- * @BDEditor VisualRefresh
 */
 
 :root {
@@ -119,19 +118,40 @@ div.sidebar_a4d4d9>section {
     bottom: 0;
     margin-bottom: .4rem;
     margin-left: -4.1rem;
-    width: calc(72px + 300px - 2.1rem);
+    width: 100%;
 
 }
 
 div.container_b2ca13 {
     background-color: var(--discord-gray-2) !important;
-    border-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
     padding: .2rem;
     padding-left: .7rem;
     padding-right: .7rem;
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: calc(72px + 300px - 2.1rem);
+}
+
+#app-mount > div.appAsidePanelWrapper_bd26cc > div.notAppAsidePanel_bd26cc > div.app_bd26cc > div > div.layers_d4b6c5.layers_a01fb1 > div > div > div > div > div.sidebar_a4d4d9 > section {
+    flex-direction: column;
+    width: calc(72px + 300px - 2.1rem);
+}
+
+/* Game activitity */
+div.panel_bf1a22.activityPanel_a4d4d9 {
+    width: calc(72px + 300px - 2.1rem + 6px);
+    border-top-left-radius: .5rem !important;
+    border-top-right-radius: .5rem;
+}
+
+/* if game activity present, remove border radius from top of user area */
+section.panels_a4d4d9:has(div.panel_bf1a22.activityPanel_a4d4d9) div.container_b2ca13 {
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
 }
 
 /* Create new server button */
@@ -175,7 +195,6 @@ div.container_b2ca13 {
     border-radius: 8px;
 }
 
-/* fix profile wrapper position" */
 #popout_21 {
     left: 35px !important;
 }
