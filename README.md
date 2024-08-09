@@ -1,7 +1,10 @@
 # visualrefresh-theme-discord
 
 New VisualRefresh theme for discord
-![image](https://github.com/user-attachments/assets/603ff3d1-0b0d-4cc5-8064-3ca977154a2b)
+![image](https://github.com/user-attachments/assets/26e9e5b4-70e8-4e35-b457-a4ce07dcaf48)
+![image](https://github.com/user-attachments/assets/cfc75708-eb2c-41f9-aac6-f02e19c1c680)
+![image](https://github.com/user-attachments/assets/addfb4e9-a51b-4f32-955e-151e04b283ac)
+
 
 
 ## Install
