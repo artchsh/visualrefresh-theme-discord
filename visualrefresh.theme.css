@@ -1,46 +1,23 @@
 /**
  * @name VisualRefresh
  * @author chuteduciel
- * @version 1.2.0
+ * @version 1.2.1
  * @description Recreated new visual from previews (that is upcoming in feature official updates)
  * @invite ZHthyCw
  * @authorId 530715643608170514
- * @source https://github.com/DiscordStyles/SoftX
+ * @source https://github.com/artchsh/visualrefresh-theme-discord
+ * @BDEditor VisualRefresh
 */
 
 :root {
     --discord-gray-0: var(--bg-overlay-chat, var(--custom-channel-members-bg));
-    --discord-gray-1: #1e1f22;
-    --discord-gray-2: #313338;
     --discord-gray-line: #414247;
     --discord-gray-line-2: #35363c;
-    --radius-xs: 8px;
-}
-
-/* Hide buttons that are on input message field */
-button[aria-label~="gift"] {
-    display: none;
-}
-
-button[aria-label~="GIF"] {
-    display: none;
-}
-
-button[aria-label~="sticker"] {
-    display: none;
-}
-
-.stickerIconOffset_ccd3df {
-    display: none;
-}
-
-#app-mount>div.appAsidePanelWrapper_bd26cc>div.notAppAsidePanel_bd26cc>div.app_bd26cc>div>div.layers_d4b6c5.layers_a01fb1>div>div>nav>ul>div.scroller_fea3ef.none_c49869.scrollerBase_c49869>div:nth-child(5) {
-    display: none;
 }
 
 /* Message input */
 #app-mount>div.appAsidePanelWrapper_bd26cc>div.notAppAsidePanel_bd26cc>div.app_bd26cc>div>div.layers_d4b6c5.layers_a01fb1>div>div>div>div>div.chat_a7d72e>div.content_a7d72e>main>form>div>div.channelTextArea_a7d72e.channelTextArea_d0696b>div.scrollableContainer_d0696b.themedBackground_d0696b {
-    background-color: var(--discord-gray-2);
+    background-color: var(--bg-overlay-chat);
     border-radius: 0;
     margin-top: .3rem;
 }
@@ -55,9 +32,9 @@ button[aria-label~="sticker"] {
 }
 
 /* Base content */
-#app-mount > div.appAsidePanelWrapper_bd26cc > div.notAppAsidePanel_bd26cc > div.app_bd26cc > div > div.layers_d4b6c5.layers_a01fb1 > div > div > div > div > div.chat_a7d72e {
-    border-top-left-radius: var(--radius-xs);
-    border-bottom-left-radius: var(--radius-xs);
+#app-mount>div.appAsidePanelWrapper_bd26cc>div.notAppAsidePanel_bd26cc>div.app_bd26cc>div>div.layers_d4b6c5.layers_a01fb1>div>div>div>div>div.chat_a7d72e {
+    border-top-left-radius: var(--radius-sm);
+    border-bottom-left-radius: var(--radius-sm);
 }
 
 /* Forum */
@@ -70,7 +47,7 @@ button[aria-label~="sticker"] {
 
 /* Server Header */
 .header_fd6364 {
-    background-color: var(--discord-gray-1);
+    background-color: var(--background-tertiary);
     box-shadow: none;
 }
 
@@ -93,12 +70,12 @@ button[aria-label~="sticker"] {
 
 /* Fixes non clickable channels */
 #channels {
-    background-color: var(--discord-gray-1) !important;
+    background-color: var(--background-tertiary);
     margin-bottom: 4rem;
 }
 
 #app-mount>div.appAsidePanelWrapper_bd26cc>div.notAppAsidePanel_bd26cc>div.app_bd26cc>div>div.layers_d4b6c5.layers_a01fb1>div>div>div>div>div.sidebar_a4d4d9>nav {
-    background-color: var(--discord-gray-1) !important;
+    background-color: var(--background-tertiary);
 }
 
 /* Fixes banner getting colored ??? */
@@ -119,15 +96,14 @@ div.sidebar_a4d4d9>section {
     margin-bottom: .4rem;
     margin-left: -4.1rem;
     width: 100%;
-
 }
 
 div.container_b2ca13 {
-    background-color: var(--discord-gray-2) !important;
-    border-bottom-left-radius: .5rem;
-    border-bottom-right-radius: .5rem;
-    border-top-left-radius: .5rem;
-    border-top-right-radius: .5rem;
+    background-color: oklab(0.321088 -0.000220731 -0.00934622) !important;
+    border-bottom-left-radius: var(--radius-sm);
+    border-bottom-right-radius: var(--radius-sm);
+    border-top-left-radius: var(--radius-sm);
+    border-top-right-radius: var(--radius-sm);
     padding: .2rem;
     padding-left: .7rem;
     padding-right: .7rem;
@@ -136,22 +112,42 @@ div.container_b2ca13 {
     width: calc(72px + 300px - 2.1rem);
 }
 
-#app-mount > div.appAsidePanelWrapper_bd26cc > div.notAppAsidePanel_bd26cc > div.app_bd26cc > div > div.layers_d4b6c5.layers_a01fb1 > div > div > div > div > div.sidebar_a4d4d9 > section {
+#app-mount>div.appAsidePanelWrapper_bd26cc>div.notAppAsidePanel_bd26cc>div.app_bd26cc>div>div.layers_d4b6c5.layers_a01fb1>div>div>div>div>div.sidebar_a4d4d9>section {
     flex-direction: column;
     width: calc(72px + 300px - 2.1rem);
+}
+
+div.wrapper_adcaac {
+    width: 360.77px;
 }
 
 /* Game activitity */
 div.panel_bf1a22.activityPanel_a4d4d9 {
     width: calc(72px + 300px - 2.1rem + 6px);
-    border-top-left-radius: .5rem !important;
-    border-top-right-radius: .5rem;
+    border-top-left-radius: var(--radius-sm);
+    border-top-right-radius: var(--radius-sm);
 }
 
 /* if game activity present, remove border radius from top of user area */
-section.panels_a4d4d9:has(div.panel_bf1a22.activityPanel_a4d4d9) div.container_b2ca13 {
+.panels_a4d4d9:has(.activityPanel_a4d4d9) .container_b2ca13 {
     border-top-left-radius: 0rem;
     border-top-right-radius: 0rem;
+}
+
+/* if voice activity present, remove border radius from top of user area*/
+.panels_a4d4d9:has(.wrapper_adcaac) .container_b2ca13 {
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+}
+
+.panels_a4d4d9:not(.activityPanel_a4d4d9) .container_adcaac {
+    border-top-left-radius: var(--radius-sm);
+    border-top-right-radius: var(--radius-sm);
+}
+
+.panels_a4d4d9:has(.activityPanel_a4d4d9) .container_adcaac {
+    border-top-left-radius: .0rem;
+    border-top-right-radius: .0rem;
 }
 
 /* Create new server button */
@@ -180,21 +176,53 @@ section.panels_a4d4d9:has(div.panel_bf1a22.activityPanel_a4d4d9) div.container_b
 }
 
 /* Direct messages */
-#app-mount > div.appAsidePanelWrapper_bd26cc > div.notAppAsidePanel_bd26cc > div.app_bd26cc > div > div.layers_d4b6c5.layers_a01fb1 > div > div > div > div > div.sidebar_a4d4d9 > nav > div.scroller_c47fa9.thin_eed6a8.scrollerBase_eed6a8.fade_eed6a8 {
-    background-color: var(--discord-gray-1);
+#app-mount>div.appAsidePanelWrapper_bd26cc>div.notAppAsidePanel_bd26cc>div.app_bd26cc>div>div.layers_d4b6c5.layers_a01fb1>div>div>div>div>div.sidebar_a4d4d9>nav>div.scroller_c47fa9.thin_eed6a8.scrollerBase_eed6a8.fade_eed6a8 {
+    background-color: var(--background-tertiary);
 }
 
-#app-mount > div.appAsidePanelWrapper_bd26cc > div.notAppAsidePanel_bd26cc > div.app_bd26cc > div > div.layers_d4b6c5.layers_a01fb1 > div > div > div > div > div.sidebar_a4d4d9 > nav > div.searchBar_f0963d {
-    background-color: var(--discord-gray-1);
+#app-mount>div.appAsidePanelWrapper_bd26cc>div.notAppAsidePanel_bd26cc>div.app_bd26cc>div>div.layers_d4b6c5.layers_a01fb1>div>div>div>div>div.sidebar_a4d4d9>nav>div.searchBar_f0963d {
+    background-color: var(--background-tertiary);
     box-shadow: none;
 }
 
+/* Direct messages - width fix */
+ul.content_eed6a8 {
+    width: 100%;
+}
+
+ul.content_eed6a8>li {
+    width: 100%;
+}
+
+li.channel_c91bad {
+    max-width: 284px;
+}
+
 /* profile Avatar wrapper */
-#app-mount > div.appAsidePanelWrapper_bd26cc > div.notAppAsidePanel_bd26cc > div.app_bd26cc > div > div.layers_d4b6c5.layers_a01fb1 > div > div > div > div > div.sidebar_a4d4d9 > section > div.container_b2ca13 > div.avatarWrapper_b2ca13 {
+#app-mount>div.appAsidePanelWrapper_bd26cc>div.notAppAsidePanel_bd26cc>div.app_bd26cc>div>div.layers_d4b6c5.layers_a01fb1>div>div>div>div>div.sidebar_a4d4d9>section>div.container_b2ca13>div.avatarWrapper_b2ca13 {
     width: 100%;
     border-radius: 8px;
 }
 
 #popout_21 {
     left: 35px !important;
+}
+
+/* Server discovery */
+#app-mount>div.appAsidePanelWrapper_bd26cc>div.notAppAsidePanel_bd26cc>div.app_bd26cc>div>div.layers_d4b6c5.layers_a01fb1>div>div>nav>ul>div.scroller_fea3ef.none_c49869.scrollerBase_c49869>div:nth-child(5)>div.listItemWrapper_dfb2f8>div>svg>foreignObject>div {
+    color: #aaaaaa;
+}
+
+#app-mount>div.appAsidePanelWrapper_bd26cc>div.notAppAsidePanel_bd26cc>div.app_bd26cc>div>div.layers_d4b6c5.layers_a01fb1>div>div>nav>ul>div.scroller_fea3ef.none_c49869.scrollerBase_c49869>div:nth-child(5)>div.listItemWrapper_dfb2f8>div>svg>foreignObject>div.selected_db6521 {
+    background-color: var(--background-primary);
+}
+
+#app-mount>div.appAsidePanelWrapper_bd26cc>div.notAppAsidePanel_bd26cc>div.app_bd26cc>div>div.layers_d4b6c5.layers_a01fb1>div>div>nav>ul>div.scroller_fea3ef.none_c49869.scrollerBase_c49869 {
+    display: flex;
+    flex-direction: column;
+}
+
+#app-mount>div.appAsidePanelWrapper_bd26cc>div.notAppAsidePanel_bd26cc>div.app_bd26cc>div>div.layers_d4b6c5.layers_a01fb1>div>div>nav>ul>div.scroller_fea3ef.none_c49869.scrollerBase_c49869>div:nth-child(5) {
+    margin-top: auto;
+    margin-bottom: 4.7rem;
 }
